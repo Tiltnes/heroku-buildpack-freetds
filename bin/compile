@@ -2,7 +2,7 @@
 echo "-----> Installing FreeTDS"
 # change to the the BUILD_DIR ($1)
 cd $1
-curl ftp://ftp.freetds.org/pub/freetds/stable/freetds-1.00.9.tar.gz -s -O
+wget ftp://ftp.freetds.org/pub/freetds/stable/freetds-1.00.21.tar.gz
 mkdir -p vendor/freetds
 tar -C vendor/freetds -xvf freetds-1.00.21.tar.gz
 cd vendor/freetds
