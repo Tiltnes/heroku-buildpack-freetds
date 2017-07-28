@@ -6,3 +6,6 @@ wget ftp://ftp.freetds.org/pub/freetds/stable/freetds-1.00.21.tar.gz
 mkdir -p vendor/freetds
 tar -C vendor/freetds -xvf freetds-1.00.21.tar.gz
 cd vendor/freetds
+./configure --prefix=/tmp/build/vendor/freetds --with-tdsver=7.3
+make
+make install
